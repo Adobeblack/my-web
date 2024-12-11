@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+
+}
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    height: 100vh; 
+}
+.loor{
+    width: 470px;
+    height: 500px;
+    padding: 10px 30px;
+    background: #fefdfd;
+    border: 3px;
+    border-radius: 10px; 
+}
+.loor h1 {
+    color: #959594;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.loor button{
+    margin: 10px;
+    line-height: 1.5;
+    padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+}
+form input {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #f7f4f4;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 0 14px;
+    background-color: #f0f0f5b1 ;
+    border-color: rgba(255, 255, 255, 0.021);
+    color: rgba(23, 23, 24, 0.918)
+}
+
+
+form input:focus{
+    outline: none;
+    border-color: #1877f2;
+} 
+::placeholder{
+    color: #646161;
+    font-size: 1rem;
+}

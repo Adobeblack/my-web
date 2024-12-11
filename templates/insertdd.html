@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySQL Connection</title>
+</head>
+<body>
+    <h1>กรอกข้อมูล</h1>
+    <form method="POST" action="/insertvs">
+        <label for="id">รหัสสินค้า:</label>
+        <input type="text" id="id" name="id" required><br>
+
+        <label for="name">ชื่อสินค้า:</label>
+        <input type="name" id="name" name="name" required><br>
+
+        <label for="price">ราคา:</label>
+        <input type="text" id="price" name="price" required><br>
+        
+        <label for="quantity">จำนวนสินค้า:</label>
+        <input type="text" id="quantity" name="quantity" required><br>
+
+        <input type="submit" value="บันทึกข้อมูล">
+    </form>
+</body>
+</html>
+{% endblock %}

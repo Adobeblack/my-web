@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign In</title>
+        <link rel="stylesheet" href="/static/css/login.css">
+    </head>
+    <body>
+    <div class="login-page">
+        <div class="text">
+            <h1>Sign In</h1>
+            <p>Welcome to the seiko.</p>
+            <p>Please to the connect</p>
+        </div>
+    </div>
+        <div class="middle">
+        <form method="POST" action="/login2">
+           <div class="user-login-box">
+            <div class="mb-3">
+                 <input type="text" class="form-control" id="username" name="username"  placeholder="username" required>
+                <!-- <label for="username" class="form-label" aria-placeholder="Username">Username</label> -->
+               
+            </div>
+            <div class="mb-2">
+                <!-- <label for="password" class="form-label" aria-placeholder="password"></label> -->
+                <input type="password" class="form-control" id="password" name="password"  placeholder="password" required>
+            </div>
+                <button type="submit" class="btn btn-outline-info">Login</button>
+                <label for="status" class="form-label" style="color: rgb(213, 12, 12);">{{ status }}</label> 
+                    <!-- <div class="lion"> -->
+                    <p class="text-center text-muted my-0 mt-3">ไม่ใช่สมาชิก ? <a href="/insertdb" class="text-muted" style="text-decoration:underline;">สมัครสมาชิก</a></p>
+                    <p class="text-center text-muted my-0 mt-3"><a href="/selectdb" class="text-muted" style="text-decoration:underline;">ลืมรหัสผ่าน</a></p>
+                    <!-- </div> -->
+            </div>
+        </form>    
+        </div>    
+       
+            
+    </body>

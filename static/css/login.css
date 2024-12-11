@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+
+}
+html {
+    width: 100vw;
+    height: 100vh;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+    background-size: cover ;
+    background-position: top;
+    background-image: url(https://images.pexels.com/photos/632653/pexels-photo-632653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;
+    width: 100;
+    height: 100;
+}
+.login-page{
+    justify-content: space-between;
+    max-width: 500px;
+    width: 100%;
+}
+.text{
+    margin-bottom: 90px;
+}
+.text h1 {
+    color: #fdfbcf;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+.text p {
+    color: #f7f6f5f2;
+    font-size: 1.75rem;
+    white-space: nowrap;
+}
+.middle {
+    position: relative;
+    width: 470px;
+    height: 280px;
+    padding: 10px 30px;
+    background: #fff;
+    border: 3px;
+    border-radius: 10px;
+}
+.user-login-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0 50px 0;
+}
+.user-login-box p {
+    margin: 10;
+    line-height: 1.5;
+    
+}
+.user-login-box button{
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+form input {
+    height: 35px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 0 14px;
+}
+form input:focus{
+    outline: none;
+    border-color: #1877f2;
+} 
+::placeholder{
+    color: #777;
+    font-size: 1rem;
+
+}
+/* .button {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+} */
+.lion {
+    color: #190388f2;
+    font-size: 1rem;
+    white-space: nowrap;
+    padding: 0 14px;
+
+}

@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySQL CONNECTION</title>
+    <style>
+        table{
+            height: 10px;
+            background-color: rgb(90, 192, 233);
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        td{
+            background-color: #fbfbfb;
+        }
+        ul{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <h1>ข้อมูลที่ถูกบันทึก</h1>
+        <div class="tables">
+            <table border="1" Align=center>
+                <tr>
+                    <nav>
+                        <th>id</th>
+                        <th>ชื่อ</th>
+                        <th>อีเมล</th>
+                        <th>username</th>
+                        <th>password</th>
+                        <th>data manage</th>
+                    </nav>
+                </tr>
+                {% for row in data %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                    <td>{{ row[3] }}</td>
+                    <td>{{ row[4] }}</td>
+                    <td>
+                        <a href="/edit/{{ row[0] }}" class="btn btn-outline-info">แก้ไข</a>
+                        <a href="/delete/{{ row[0] }}" class="btn btn-outline-danger">ลบ</a>
+                    </td>
+                </tr>
+            
+                {% endfor %}
+            </table>
+        </div>
+        <a href="/insertdb" class="btn btn-primary">เพิ่มข้อมูล</a>
+    </ul>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>อัปเดตข้อมูล</title>
+</head>
+<body>
+    <h1>อัปเดตข้อมูล</h1>
+
+    <form method="POST" action="/updatevs">
+        <input type="hidden" name="id" value="{{ user[0] }}">
+
+        <label for="name">ชื่อ:</label>
+        <input type="text" id="name" name="name" value="{{ user[1] }}" required><br>
+
+        <label for="price">ราคา:</label>
+        <input type="text" id="price" name="price" value="{{ user[2] }}" required><br>
+        
+        <label for="quantity">จำนวนสินค้า:</label>
+        <input type="text" id="quantity" name="quantity" value="{{ user[3] }}" required><br>
+
+        <input type="submit" value="อัปเดตข้อมูล">
+    </form>
+</body>
+</html>
+{% endblock %}

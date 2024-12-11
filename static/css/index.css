@@ -1,0 +1,61 @@
+
+.carder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    height: 100vh; 
+
+}
+.card{
+    animation: backAn 60s infinite;
+    color: #f9f9f9;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background: url(https://www.seikowatches.com/us-en/-/media/Images/GlobalEn/Seiko/Home/news/20200305-67527300709/prospexThumb.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: Between middle and 
+    bottom;
+    box-shadow: 0px 45px 100px rgba(0, 0, 0, 0.4),
+    inset 0 0 0 1000px rgba(24, 27, 120, 0.6);
+}
+.card button {
+    /* margin: 10px;
+    line-height: 0.5;
+    padding: 10px 20px;
+    width: 115px;
+    height: 45px;
+    background-color: #3498db;
+    color: #fff;
+    border: none; */
+    position: absolute; /* ใช้ตำแหน่งแบบอักษร */
+    top: 350px; 
+    left: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 115px;
+    height: 45px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0594e7;
+}
+.card img {
+    position: absolute; /* ใช้ตำแหน่งแบบอักษร */
+    top: 100px; 
+    left: 800px; 
+    width: 550px; /* กำหนดความกว้างของรูปภาพ */
+    height: 300px; /* ความสูงปรับอัตโนมัติ */
+    background-color: #fff;
+    /* width: auto;
+    height: 300px; */
+}

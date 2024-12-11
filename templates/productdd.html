@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySQL CONNECTION</title>
+
+    <style>
+        table{
+            height: 10px;
+            background-color: rgb(90, 192, 233);
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        td{
+            background-color: #ffffff;
+        }
+        ul{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <h1>ข้อมูลที่ถูกบันทึก</h1>
+        <div class="tables" style="margin-top: 80px;">
+            <table border="1" Align=center>
+                <tr>
+                    <nav>
+                        <th>รหัสสินค้า</th>
+                        <th>ชื่อสินค้า</th>
+                        <th>ราคาสินค้า</th>
+                        <th>จำนวนสินค้า</th>
+                    </nav>
+                </tr>
+                {% for row in data %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                    <td>{{ row[3] }}</td>
+                    <td>
+                        <a href="/editvs/{{ row[0] }}" class="btn btn-outline-info">แก้ไข</a>
+                        <a href="/deletevs/{{ row[0] }}" class="btn btn-outline-danger">ลบ</a>
+                    </td>
+                </tr>
+
+                {% endfor %}
+            </table>
+        </div>
+        <a href="/insertdd" class="btn btn-primary">เพิ่มข้อมูล</a>
+    </ul>
+</body>
+</html>
+{% endblock %}

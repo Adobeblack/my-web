@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body{
+        background-image: url('https://www.seikowatches.com/th-th/-/media/Images/GlobalEn/Seiko/Home/news/20200305-67527300709/Recreationsa12002jpg.jpg');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: Between middle and bottom;
+    }
+
+   
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEIKO Brand</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="btn.css">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img src="../static/image/Clock.jpg" width="90", height="80" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">หน้าหลัก</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/product">สินค้า</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/aboutme">เกี่ยวกับฉัน</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">ติดต่อ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/insertdb">สมัครสมาชิก</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/productdd">ตะกร้าสินค้า</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" >
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <a href="/"><img src="../static/image/555.png" width= "30px", height="30px" alt=""></a>&nbsp; &nbsp; &nbsp; &nbsp;
+              <a href="/login"><img src="../static/image/user-solid.svg" width= "30px", height="30px" alt=""></a>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <main>
+        {% block content %}
+        {% endblock %}
+      </main>
+</body>
+<body>
+  
+  </div>
+</body>
+</html>

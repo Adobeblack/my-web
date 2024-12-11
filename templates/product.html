@@ -1,0 +1,137 @@
+{% extends "layout.html" %}
+{% block content %}
+    <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <style>
+                .card {
+                    flex-basis: calc(33.33% - 20px);
+                    width: 320px;
+                    height: 550px;
+                    border: 1px solid #ccc;
+                    border-radius: 30px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                    margin: 10px;
+                    padding: 16px;
+                    text-align: center;
+                    position: relative;
+                }
+                .card:hover {
+                     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+                }
+                .container {
+                    padding: 2px 16px;
+                }  
+                .card-group {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    margin: 20px;  
+                }
+                .card img {
+                    max-width: 100%; 
+                    max-height: 100%;
+                }
+                .card p {
+                    font-size: 14px; 
+                }
+                .card button{
+                padding: 10px;
+                margin: 10px 0;
+                width: 115px;
+                height: 45px;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                position: absolute;
+                bottom: 10px; /* ตำแหน่งล่างของกล่อง */
+                left: 50%; /* ตำแหน่งในศูนย์ */
+                transform: translateX(-50%);
+                }
+
+                .card button:hover {
+                background-color: #0056b3;
+                }
+                
+            </style>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+    
+        <body>
+            <div class="card-group">
+                <div class="card">
+                    <img src="../static/image/c2.jpg">
+                    <div class="container">
+                    <h4><b>Selko 5 sports</b></h4>
+                    <p>price 16000.฿</p>
+                    </div>
+                    <button type="submit">Buy</button>
+                 </div>
+                <div class="card">
+                    <img src="../static/image/c1.jpg">
+                    <div class="container">
+                    <h4><b>Seiko 62mas</b></h4>
+                    <p>price 44500.฿</p>
+                 </div>
+                 <button type="submit">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="../static/image/c3.jpg">
+                    <div class="container">
+                    <h4><b>Seiko 62mas</b></h4>
+                    <p>price 21300฿</p>
+                    </div>
+                    <button type="submit">Buy</button>
+                 </div>
+                 <div class="card">
+                    <img src="../static/image/c4.jpg">
+                    <div class="container">
+                    <h4><b>Seiko prospex diver king samurai</b></h4>
+                    <p>price 40000฿</p>
+                    </div>
+                    <button type="submit">Buy</button>
+                 </div>
+                
+            </div>
+        </body>
+        <body>
+            <div class="card-group">
+                <div class="card">
+                    <img src="../static/image/c6.jpg">
+                    <div class="container">
+                    <h4><b>Seiko prospex solar speed timer</b></h4>
+                    <p>price 27000฿</p>
+                    </div>
+                    <button type="submit">Buy</button>
+                 </div>
+                <div class="card">
+                    <img src="../static/image/c5.png">
+                    <div class="container">
+                    <h4><b>Selko 5 sports honda super cub limited edition</b></h4>
+                    <p>price 16000.฿</p>
+                 </div>
+                 <button type="submit">Buy</button>
+                </div>
+                <div class="card">
+                    <img src="../static/image/c7.jpg">
+                    <div class="container">
+                    <h4><b>seiko professional</b></h4>
+                        <p>price 27000฿</p>
+                    </div>
+                    <button type="submit">Buy</button>
+                 </div>
+                 <div class="card">
+                    <img src="../static/image/c8.jpg">
+                    <div class="container">
+                    <h4><b>Selko Thailand limited edition</b></h4>
+                    <p>price 130000.฿</p>
+                    </div>
+                    <button type="submit">Buy</button>
+                 </div>
+            </div>
+        </body>
+        </html>
+{% endblock %}
